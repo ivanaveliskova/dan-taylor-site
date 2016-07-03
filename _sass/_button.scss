@@ -1,0 +1,20 @@
+// Button
+
+// scss-lint:disable Indentation SpaceAfterPropertyColon LeadingZero
+
+.button {
+    background: $color;
+    border: 0;
+    color: $opposite-color;
+    cursor: pointer;
+    font-family: $font;
+    font-size: 16px;
+    line-height: 1;
+    padding: 10px;
+    transition: all 0.25s ease;
+    width: 100px;
+
+    &:hover {
+        background: $link-hover-color;
+    }
+}

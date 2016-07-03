@@ -1,0 +1,47 @@
+// FOOTER
+
+// scss-lint:disable Indentation SpaceAfterPropertyColon EmptyRule SelectorFormat
+
+.footer {
+    border-top: 1px solid $alt-border-color;
+}
+
+    .footer__heading {}
+
+    .footer__info {
+        display: flex;
+        flex-direction: column;
+
+        @include min-width($above-tablet) {
+            border-bottom: 1px solid $alt-border-color;
+            border-top:    1px solid $alt-border-color;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+        .footer__info-section {
+            border-top: 1px solid $alt-border-color;
+            padding: 20px 0;
+
+            @include min-width($above-tablet) {
+                border: 0;
+                width: 45%;
+            }
+        }
+
+        .footer__contact {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer__map {
+            height: 300px;
+            width: 100%;
+        }
+
+.footer__copyright {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}

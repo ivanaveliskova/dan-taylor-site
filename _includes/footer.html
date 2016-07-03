@@ -1,0 +1,54 @@
+<footer class="footer" id="contact">
+    <div class="container">
+        <h3 class="footer__heading">Get in Touch!</h3>
+
+        <div class="footer__info">
+            <div class="footer__info-section">
+                <h4>Contact Us</h4>
+                <form method="post" action="contactengine.php" class="footer__contact">
+                    <label for="Name">Name:</label>
+                    <input type="text" name="Name" id="Name" class="contact" placeholder="Hermione Granger"/>
+        
+                    <label for="Email">Email:</label>
+                    <input type="email" name="Email" id="Email" class="contact" placeholder="hgranger@hogwarts.com" />
+
+                    <label for="Subject">Subject:</label>
+                    <div class="contact-container">
+                        <div data-add-ellipses="" class="contact contact--select"></div>
+                        <select name="Subject" id="Subject" class="transparent-select">
+                            <option value="moreInfo">I'm interested in more information</option> 
+                            <option value="wedding">I would like to start taking some lessons for my first dance</option>
+                            <option value="shawcase">I am interested in booking entertainment for a show</option>
+                            <option value="giftCertificate">I'm interested in buying a gift certificate for a friend</option>
+                            <option value="dancesport">I would like to know more about dancesport</option>
+                            <option value="fitness">I'm interested in taking dance lessons to improve my physical fitness</option>
+                        </select>
+                    </div>
+
+                    <label for="Message">Message:</label>
+                    <textarea name="Message" rows="20" cols="20" id="Message" class="contact contact--multiline"></textarea>
+
+                    <input type="submit" name="submit" value="Submit" class="button" />
+                </form>
+            </div>
+
+            <div class="footer__info-section">
+                <h4>Find us here!</h4>
+                <p>1224 S. Bascom Ave., San Jose, CA 95128</p>
+                <div class="footer__map" data-map=''></div>
+            </div>
+        </div>
+
+        <div class="footer__copyright">Copyright &copy; {{ site.time | date: "%Y" }} &#8226; Ivana Vel&iacute;&scaron;kov&aacute;</div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- Slick.js -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<!-- Custom js -->
+<script type="text/javascript" src="javascripts/custom.js"></script>
+<!-- Google map javascript api -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5BrfWqsVND7ruEKezLezA1CePvoTlVmM&callback=initMap">
+</script>

@@ -1,0 +1,71 @@
+// Contact
+
+// scss-lint:disable Indentation SpaceAfterPropertyColon
+
+.contact {
+    border: 1px solid $color;
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    &:focus {
+        border: 1px solid $highlight-color;
+        box-shadow: 0 0 1px 1px $highlight-color-2;
+        outline: none;
+    }
+}
+
+.contact--multiline {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.contact--select {
+    @include prefix(text-overflow, ellipsis, moz o);
+    background: none;
+    overflow: hidden;
+    padding: 10px 60px 10px 10px;
+    position: absolute;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 1;
+
+    &:after {
+        border-left:  10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top:   10px solid $color;
+        content: '';
+        pointer-events: none;
+        position: absolute;
+        right: 20px;
+        top:   22px;
+    }
+}
+
+.transparent-select {
+    @include prefix(appearance, none, webkit moz);
+    @include prefix(border-radius, 0, webkit moz);
+    background: none;
+    border: 0;
+    color: transparent;
+    font-size: 16px;
+    height: 54px;
+    line-height: 2;
+    margin-bottom: 10px;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+
+    &:focus {
+        border: 1px solid $highlight-color;
+        box-shadow: 0 0 1px 1px $highlight-color-2;
+        outline: none;
+    }
+}
+
+.contact-container {
+    position: relative;
+    width: 100%;
+}

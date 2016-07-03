@@ -1,0 +1,19 @@
+// CONTAINER
+
+// scss-lint:disable Indentation SpaceAfterPropertyColon
+
+.container {
+    margin: 0 auto;
+    max-width: $max-site-width;
+    padding: 15px;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+
+    @include min-width($above-tablet) {
+        flex-direction: row;
+    }
+}

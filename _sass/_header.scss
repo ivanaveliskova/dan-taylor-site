@@ -1,0 +1,56 @@
+// HEADER
+
+// scss-lint:disable Indentation SpaceAfterPropertyColon SelectorFormat
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+
+    @include min-width($above-tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+    .header__nav {
+        align-items: baseline;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 20px;
+
+        @include min-width($above-tablet) {
+            margin: 0;
+        }
+    }
+
+        .header__nav-link {
+            margin: 5px 10px;
+            text-transform: capitalize;
+        }
+
+    .header__contact {
+        border-top: 1px solid $alt-border-color;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+
+        @include min-width($above-tablet) {
+            border: 0;
+            padding: 0;
+        }
+    }
+
+        .header__contact-container {
+            margin: 0 20px;
+            text-align: right;
+        }
+
+            .header__contact-name {
+                margin-bottom: 0;
+            }
+
+            .header__contact-number {
+                margin-bottom: 0;
+            }

@@ -1,0 +1,26 @@
+<header class="header">
+  <nav class="header__nav">
+    {% assign pages = site.pages | sort:"order" %}
+    {% for my_page in pages %}
+      {% if my_page.title %}
+        <a class="header__nav-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        <div class="header__divider">||</div>
+      {% endif %}
+    {% endfor %}
+
+    <a class="header__nav-link" href="#contact" data-scroll-to-button=''>Contact</a>
+  </nav>
+
+  <div class="header__contact">
+    <div class="header__contact-container">
+      <p class="header__contact-name">Daniel Lee Tran</p>
+      <a class="header__contact-number" href="tel:+1-408-694-7048">+1 (408) 694-7048</a>
+    </div>
+    <div class="header__divider">||</div>
+    <div class="header__contact-container">
+      <p class="header__contact-name">Taylor Elizabeth Kinney</p>
+      <a class="header__contact-number" href="tel:+1-415-971-2582">+1 (415) 971-2582</a>
+    </div>
+  </div>
+</header>
+
