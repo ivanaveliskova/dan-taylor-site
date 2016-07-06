@@ -15,5 +15,7 @@
 
     @include min-width($above-tablet) {
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }

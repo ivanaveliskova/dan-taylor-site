@@ -1,12 +1,14 @@
 // Image-slider
 
-// scss-lint:disable Indentation SpaceAfterPropertyColon EmptyRule
+// scss-lint:disable Indentation SpaceAfterPropertyColon EmptyRule ImportantRule
 
-.image-slider {}
+.image-slider {
+    text-align: center;
+}
 
     .slick-dots {
+        display: inline-block !important;
         margin: 10px auto 20px;
-        max-width: 100px;
 
         button {
             @include hide-text;

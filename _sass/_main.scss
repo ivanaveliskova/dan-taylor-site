@@ -1,0 +1,20 @@
+// MAIN CONTENT
+
+// scss-lint:disable Indentation SpaceAfterPropertyColon EmptyRule SelectorFormat
+
+.main {}
+
+    .main__section {
+
+        ul {
+            margin-left: 30px;
+        }
+
+        .flex-container & {
+
+            @include min-width($above-tablet) {
+                margin: 0 20px;
+                width: 45%;
+            }
+        }
+    }
