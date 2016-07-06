@@ -11,9 +11,11 @@
         }
 
         .flex-container & {
+            border-top: 1px solid $border-color;
 
             @include min-width($above-tablet) {
-                margin: 0 20px;
+                border: 0;
+                margin: 10px 20px;
                 width: 45%;
             }
         }
