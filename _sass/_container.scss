@@ -19,3 +19,11 @@
         justify-content: center;
     }
 }
+
+.flex-container--reviews {
+
+    @include min-width($above-tablet) {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

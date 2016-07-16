@@ -1,0 +1,34 @@
+// REVIEW
+
+// scss-lint:disable Indentation SpaceAfterPropertyColon EmptyRule SelectorFormat
+
+.review {
+    border-top: 1px solid $border-color;
+    padding-top: 15px;  
+
+    @include min-width($above-tablet) {
+        padding: 15px;
+        width: 50%;
+    }
+
+    &:first-child,
+    &:nth-child(2) {
+        @include min-width($above-tablet) {
+            border-top: 0;
+        }
+    }
+
+    &:nth-child(odd) {
+        @include min-width($above-tablet) {
+            border-right: 1px solid $border-color;
+        }
+    }
+}
+
+
+    .review__review {}
+
+    .review__author {
+        font-size: 18px;
+        font-weight: bold;
+    }
