@@ -1,0 +1,24 @@
+// COMING-SOON
+
+// scss-lint:disable Indentation SpaceAfterPropertyColon EmptyRule SelectorFormat
+
+.coming-soon {
+    position: relative;
+    text-align: center;
+}
+
+    .coming-soon__image {}
+
+    .coming-soon__heading {
+        position: absolute;
+        left:  0;
+        right: 0;
+        top:   15%;
+        font-size: 50px;
+        color: $background-color;
+        text-shadow: 0 0 10px $highlight-color;
+
+        @include min-width($above-tablet) {
+            font-size: 70px;
+        }
+    }
