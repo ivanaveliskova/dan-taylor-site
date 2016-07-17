@@ -7,10 +7,12 @@
     border: 0;
     color: $opposite-color;
     cursor: pointer;
+    display: block;
     font-family: $font;
     font-size: 16px;
     line-height: 1;
     padding: 10px;
+    text-align: center;
     transition: all 0.25s ease;
     width: 100px;
 
@@ -26,6 +28,7 @@
     border: 1px solid $color;
     border-radius: 5px;
     color: $color;
+    margin-bottom: 10px;
 
     &:hover {
         background: $color;
