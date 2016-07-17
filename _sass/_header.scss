@@ -44,7 +44,11 @@
 
         .header__contact-container {
             margin: 0 20px;
-            text-align: right;
+            text-align: center;
+
+            @include min-width($above-tablet) {
+                text-align: right;
+            }
         }
 
             .header__contact-name {
@@ -53,4 +57,5 @@
 
             .header__contact-number {
                 margin-bottom: 0;
+                white-space: nowrap;
             }

@@ -70,6 +70,7 @@ a, a span {
 
     &:hover {
         color: $link-hover-color;
+        cursor: pointer;
         text-decoration: none;
         text-shadow: 0 0 1px $link-outer-glow;
     }

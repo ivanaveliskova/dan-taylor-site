@@ -55,3 +55,22 @@ $('[data-add-ellipses]').text($('#Subject')[0].textContent);
 $('#Subject').change(function () {
     $('[data-add-ellipses]').text($("option:selected", this).text());
 });   
+
+
+// Show more sections
+
+var showMore = function(event) {
+    var $target = $(event.currentTarget),
+        $targetParagraph = $target.next('.main--hidden');
+
+    if($targetParagraph.length === 0) { return; }
+
+    event.preventDefault();
+
+    $target.addClass('button--hidden');
+    $targetParagraph.addClass('main--show');
+};
+
+$('[data-trigger]').on('click', showMore);
+
+

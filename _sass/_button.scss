@@ -16,5 +16,11 @@
 
     &:hover {
         background: $link-hover-color;
+        color: $opposite-color;
+        text-shadow: none;
     }
+}
+
+.button--hidden {
+    display: none;
 }
