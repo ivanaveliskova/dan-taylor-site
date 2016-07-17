@@ -21,6 +21,17 @@
     }
 }
 
+.button--alt {
+    background: $background-color;
+    border: 1px solid $color;
+    border-radius: 5px;
+    color: $color;
+
+    &:hover {
+        background: $color;
+    }
+}
+
 .button--hidden {
     display: none;
 }
