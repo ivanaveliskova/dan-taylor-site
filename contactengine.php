@@ -32,11 +32,14 @@ $Body .= "\n";
 // send email 
 $success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
 
-// redirect to success page 
-if ($success){
-  print "<meta http-equiv=\"refresh\" content=\"0;\">";
-}
-else{
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
+if ($_POST['submit']) {
+    $referer = $_SERVER['HTTP_REFERER'];
+
+    if ($success) { 
+        header("Location: $referer");
+        exit;
+    } else { 
+        echo '<h1>ERROR!</h1><p>Something went wrong, go back and try again!</p>'; 
+    }
 }
 ?>

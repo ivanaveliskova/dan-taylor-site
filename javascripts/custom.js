@@ -61,13 +61,19 @@ $('#Subject').change(function () {
 
 var showMore = function(event) {
     var $target = $(event.currentTarget),
-        $targetParagraph = $target.next('.main--hidden');
+        $targetParagraph = $target.next('.main--hidden'),
+        maxHeight = 0;
 
     if($targetParagraph.length === 0) { return; }
 
     event.preventDefault();
 
     $target.addClass('button--hidden');
+    $targetParagraph.children().each(function() {
+        maxHeight += $(this).outerHeight(true);
+    });
+    $targetParagraph.height(maxHeight);
+
     $targetParagraph.addClass('main--show');
 };
 
