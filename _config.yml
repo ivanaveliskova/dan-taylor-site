@@ -9,8 +9,8 @@
 title: Dan and Taylor
 description: > # this means to ignore newlines until "baseurl:"
   Dan and Taylor: The professionals to go to when you want to learn to dance in the Bay Area.
-baseurl: "/dan-taylor-site" # the subpath of your site, e.g. /blog
-url: "http://www.ivanaveliskova.com" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.dantaylordance.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
